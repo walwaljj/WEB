@@ -1,0 +1,15 @@
+/*19style.css*/
+@charset "UTF-8";
+
+body{
+    color : navy;
+    font-size: 1.2em;/* 1em :16px, 1.2em: 16px 의 1.2배.. 상대적인 값이다.*/
+}
+
+div{
+    color:coral;
+    background-color: slategray;
+    margin: 20px;
+    padding: 1.2em;
+    font-family: 궁서체, Georgia, 'Times New Roman', Times, serif;
+}

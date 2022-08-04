@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09테이블.html</title>
+</head>
+<body>
+    <h1>테이블 태그(3행 2열)</h1>
+    <!-- tr : 행태그 table row
+        tr : 열태그 table data
+        
+    -->
+    <table border="1" bordercolor="green" 
+            bgcolor="gold" cellspacing="30"
+            cellpadding="20" align="center"
+            background="images/5.png"
+            width="400px" height="300px" style="color:wheat">
+            <!-- border를 해주면 티가난당! 안해도 무관
+            align로 표 위치를 정할 수 있다.
+            bgcolor 뒷배경에 색을 준다.
+            background로 뒷 배경 이미지설정가능
+            cellspacing 만큼 표 테두리와 내용사이 30간격을 준다.
+            테이블 안 글자가 cellpadding 20 만큼 오른쪽으로 이동
+            style="color:wheat" 로 글자색을 준다.-->
+        <!-- 1행-->
+        <tr><!-- tr: 행태그-->
+            <td>1행1열</td><!-- td : 내용을 갖는 열 -->
+            <td>1행2열</td>
+        </tr>
+        <!-- 2행-->
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+        <!-- 3행-->
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+    </table>
+    <hr color="pink">
+    <!-- 3행 4열-->
+    <table border="1" width="80%" height="200" align="center">
+        <thead>
+            <tr bgcolor="#3289af"><!-- rgb색, #000000 16진수값 (32는 레드 89가 그린  af는 블루 )-->
+                <th>번호</th><!-- 중앙정렬, 볼드체-->
+                <th>이름</th>
+                <th>연락처</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="10%">1</td><!-- 왼쪽정렬, 노말글씨-->
+                <td width="20%">홍길동</td><!-- td width="20%" : 표의 각 행의 크기를 지정-->
+                <td width="20%">010-1111-2222</td>
+                <td width="50%">부산시 남구</td>
+            </tr>
+            <tr>
+                <td>2</td><!-- 왼쪽정렬, 노말글씨-->
+                <td>홍길동2</td>
+                <td background="../images/background2.png" style="color:honeydew">010-1111-2222</td><!-- color는 글자색 -->
+                <td>부산시 남구</td>
+            </tr>
+            <tr>
+                <td>3</td><!-- 왼쪽정렬, 노말글씨-->
+                <td bgcolor="pink" style="color:lightsteelblue">홍길동3</td>
+                <td>010-1111-2222</td>
+                <td>부산시 남구</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <caption>회원 주소록</caption><!-- 중앙정렬-->
+        </tfoot>
+    </table>
+</body>
+ 
+</html>

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#phone{
+    width:40px;
+}
+span{
+    color :royalblue;
+    font-size: 13px;
+}
+b{
+   
+    color : navy;
+    font-size: 1.1em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
