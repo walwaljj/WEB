@@ -18,9 +18,22 @@
             font-weight: 900;/*h가아닌 일반 텍스트만 지정됨*/
             /*글자 두께 : 숫자 100~900, bold, bolder, lighter*/
             color:navy;
-            text-align: center;
+            /* text-align: center; */
             /*글자위치 정열 : left, center, right , 디폴트는 left*/
+
         }
+
+        #a1{
+            text-transform: capitalize;
+        }
+        #a2{
+            text-transform: uppercase;
+        }
+        #a3{
+            text-transform: lowercase;
+        }
+
+
     </style>
 </head>
 <body>
@@ -36,13 +49,22 @@
 
     <table border="1" style="width: 80%; height: 400px; margin:auto;">
         <tr>
-            <td width="50%">수직정렬</td>
-            <td >수평정렬</td>
+            <td width="50%" style="vertical-align: top;">수직정렬</td>
+            <!-- 수직정렬은 vertical-align : top, middle(디폴트) , bottom 이 올수있다.-->
+            <td style="text-align: center ;">수평정렬</td>
+            <!-- 수평정렬은 text-align : left, center, right-->
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td ><div id="a1" >abc(첫글자를 대문자로)</div>
+            <div id="a2">abc(모두 대문자로)</div>
+            <div id="a3">abcDEF(모두 소문자로)</div></td>
+            <td>
+                문자간격<br>
+                <span style="color: brown; letter-spacing:10px;">문자간격</span><br>
+                <span style="color: darkgreen; word-spacing:20px">단어 간격</span><br>
+            </td>
         </tr>
     </table>
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

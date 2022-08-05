@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 실습</title>
+    <style>
+        table{
+            width: 700px;
+            height:900px;
+            margin: 10px;
+        }
+
+        body>div{
+            float:left;
+            margin: 6px;
+            
+        }
+        body p{
+            font-size: small;
+            color:darkgray;
+        }
+        #b>input{
+            display: inline-block;
+            caption-side: right;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <table border="1"  align="center" cellpadding="20">
+        <tbody>
+            <tr class="H" id="H" >
+                <td colspan="5">
+                   <label id="b"><input type="text" value="..">
+                    <input type="button" value="go!"></label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="5">목록 목록 목록 목록</td>
+              
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <a href="사진 링크">
+                        <img src="사진">
+                        <hr>
+                         상품설명
+                        </td>
+                <td rowspan="2"colspan="2">
+                    <a href="사진 링크">
+                    <img src="사진">
+                    <hr>
+                     상품설명
+                    </td>
+                <td rowspan="5">
+                    <h2>menu</h2>
+                    <hr>
+                 <ul>
+                    <li><a href="">링크1</a></li>
+                    <li><a href="">링크2</a></li>
+                    <li><a href="">링크3</a></li>
+                    <li><a href="">링크4</a></li>
+                 </ul>
+                </td>
+            </tr>
+
+            <tr></tr>
+
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <a href="사진 링크">
+                    <img src="사진">
+                    <hr>
+                     상품설명
+                    </td>
+                <td rowspan="2"colspan="2">
+                    <a href="사진 링크">
+                    <img src="사진">
+                    <hr>
+                     상품설명
+                    </td>
+            </tr>
+
+            <tr></tr>
+
+            <tr>
+                
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div>
+        <h5>COMPANY</h5>
+        <p>
+        수현컴퍼니<br>
+        E-MAIL:수현@abc.com<br>
+        Address:부산시 창원시..어쩌구<br></p>
+    </div>
+    <div>
+        
+        <h5>INFO</h5>
+      <p>CS & Q&A : 
+        <time>MON-FRI<br> 
+            10:00-18:00</time></p> 
+    </div>
+    <div>
+        <h5>Follow</h5>
+       <p> Instagram : wal..<br>
+        Copyright©2022 어느날..</p>
+        </div>
+    <div>
+        <a href="#H">상단</a>
+    </div>
+</body>
+</html>

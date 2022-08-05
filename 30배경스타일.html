@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30배경스타일.html</title>
+    <style>
+        body{
+            color:rgba(50%, 30%, 40%, 0.8)
+            /*rgba => red, green , blue, alpha(투명도)
+            0:투명, 1:불투명*/
+        }
+
+        span{
+            padding:1em;
+            color:blue;
+        }
+        span.sky{
+            background-color: skyblue;
+        }
+
+        .pink{
+            background-color: pink;
+        }
+        /* td태그에 대해 배경색 주기: 노랑 */
+        td{
+            background-color: lightyellow;
+        }
+         table>tbody>tr>td{/*table 밑에 tbody가 자동으로 붙는다.*/
+             background-image: url(images/background2.png) ;/*그림이 붙고, 나머지 공간에 같은그림을 또 붙힘.*/
+             background-size: 30%;
+             background-repeat: no-repeat;/*repeat이 디폴트*/
+
+
+        }
+        td#x{
+            background-repeat: repeat-x;
+        }
+        td#y{
+            background-repeat: repeat-y;
+        }
+        td#z{
+            background-repeat: no-repeat;
+        }
+        td.a,#x2,#y2,#z2{
+            background-repeat: no-repeat;
+            
+        }
+        td#x2{
+            background-position: right bottom;
+        }
+        td#y2{
+            background-position: 50% 50%;
+        }
+        td#z2{
+            background-position: 50px 50px;
+        }
+        /* textarea에 대해 아래 스타일을 적용하세요
+            글자크기: 1.2em;
+            배경이미지: 알아서
+            배경이미지: 반복하지 않도록
+            이미지를 중앙에 위치시키세요
+            테두리: 2px solid 색상알아서
+        */
+        .txt{
+            font-size: 1.2em;
+            background-image: url(images/background1.png);
+            background-size: 50% 50% ;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid lightslategrey;
+            background-attachment: local;
+            /*attachment를 주면 백그라운드가 스크롤시 영향받는 속성..?
+            무튼, scorll이 디폴트 <- 스크롤 움직여도 백그라운드는 고정
+            
+            그리고 텍스트 박스에 커서가 가면 텍스트박스에 테두리가 생김.
+            테두리를 없애는 코드를 작성하거나, 보더 픽셀을 크게주자..*/
+        }
+    </style>
+</head>
+<body>
+    <h1>배경 관련 스타일</h1>
+  <span class="sky">배경색 적용하기1</span>
+  <span class="pink">배경색 적용하기2</span>
+
+  <h2 class="sky">배경에 이미지 적용하기</h2>
+
+  <table border="1" height="400px" width="100%">
+  <tr>
+	<td width="25%">repeat</td>
+	<td width="25%" id="x" >repeat-x</td>
+	<td width="25%" id="y">repeat-y</td>
+	<td width="25%" id="z">no-repeat</td>
+  </tr>
+  <tr>
+	<td width="25%" class="a">기본 위치는 left, top</td>
+	<td width="25%" id="x2">right-bottom</td>
+	<td width="25%" id="y2">50% 50%</td>
+	<td width="25%" id="z2">50px 50px</td>
+  </tr>
+  </table>
+<hr color="red">
+	<textarea class="txt" rows="10" cols="50">안녕하세요?</textarea>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
