@@ -5,6 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24상태선택자.html</title>
+    <Style>
+        body{
+            font-size:1.2em;
+            font-family:sans-serif;
+            padding:1em;
+        }
+        /*상태선택장
+        태그명:특성{   }
+        */
+        /*링크 방문전*/
+        a:link{
+            text-decoration: none;
+            color:orchid;
+        }
+
+        /*링크 방문후*/
+        a:visited{
+            color:crimson;
+        }
+        /*마우스 클릭시 */
+        a:active{
+            background-color: black;/*뒷배경 색바꿈*/
+        }
+        /*마우스 오버시*/
+        a:hover{
+            color: blue;
+            font-size: 1.5em;
+            cursor: wait;
+        }
+
+        /*[뮨재] 클래스가 google인 a요소를 선택해서 
+        배경색을 lime으로 주세요 */
+        a.google{
+            background-color: lime;
+        }
+        /*[문제] 클래스가 google이 아닌 a요소를 선택해서
+        배경을 다른색 주기 (요소: not (배제할요소))*/
+        a:not(.google){
+            background-color: beige;
+        }
+        
+        button:disabled{
+            background-color: darkgray;
+        }
+   
+        
+    </Style>
 </head>
 <body>
     <h1>상태선택자-하이퍼링크 스타일</h1>
@@ -16,6 +63,8 @@
 
     일반 텍스트
     <div>헤드라인 텍스트</div>
+    <button>활성화 버튼</button>
+    <button disabled>비활성화버튼</button>
 
 </body>
 </html>
