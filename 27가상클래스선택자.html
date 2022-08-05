@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27가상클래스선택자.html</title>
+    <style>
+        label{/*라벨은 인라인이라 display:inline-block 해줘야한다.*/
+            
+            display:inline-block;
+            width: 30%;
+
+        }
+        /*유효하지 않은 데이터가 입력될 경우 또는 아예 입력 안했을 경우*/
+        input[type=text]:invalid{/*text값이 invalid일때 색이 변함.*/
+            background-color: rgba(150,0,0,0.3);/*rgba에서 a는 투명도.*/
+        }
+        /*유효한 데이터가 적용 됬을 경우*/
+        input[type=text]:valid{/*text값이 valid일때 색이 변함.*/
+            background-color: bisque;
+        }
+        /* input요소 중 text타입이 아닌 요소를 선택해서
+            테두리 2px dotted green으로 주세요
+         */
+         input:not([type=text]){
+            border : 2px dotted green;
+         }
+
+    </style>
+</head>
+<body>
+    <form action="join" method="post">
+        <label for="">반드시 값을 입력해야 해요</label>
+            <input type="text" required><!--required: 입력하지 않을때 말풍선 띄움 -->
+        <br>
+
+        <label for="">특수문자를 포함하지 않는 4자리 문자 또는 숫자</label>
+            <input type="text" required pattern="[a-zA-Z0-9]{4}">
+            <!-- pattern="[0-9]{2,4}" : []안에 범위, {}안에 자릿수,
+                 두자리에서 4자리까지만 입력받겠다. -->
+        <br>
+        <label for="">비밀번호 입력</label>
+            <input type="password" required>
+        <br>
+        <button>회원가입</button>
+    </form>
+
+
+</body>
+</html>

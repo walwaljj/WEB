@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28가상요소선택자.html</title>
+    <style>
+        /* 가상클래스: 문서의 여러 요소 중 원하는 요소를 선택
+		   가상요소 : 문서 안의 특정 부분에 스타일을 지정하기 위해 가상으로 요소를 만들어 추가한다.
+		   	가상요소는 가상 클래스와 구별하도록 가상요소 이름 앞에 콜론(::) 2개를 붙여 표시한다.
+
+            주로 쓰는 태그
+            요소::first-letter : 요소 중 첫 글자를 선택한다.
+            요소::first-line : 첫번째 줄을 선택한다.
+            요소::after : 요소 이후에 스타일을 적용
+            요소::after : 요소 이후에 스타일을 적용
+            요소::selection : 선택한 요소
+            */
+            p::first-letter{
+                font-size: 3em;
+            }
+            /*p 요소의 첫번째 줄의 글자 색상을 다르게 주기*/
+            p::first-line{
+                color: slategray;
+                font-weight: bold;
+                font-style: italic;
+            }
+            h1::after{
+                content: " CSS!!";
+                color:violet;
+                font-style:italic;
+            }
+            /*h1요소 앞에 "HTML" 내용을 붙이고 글자색 PURPLE로 주세요 */
+            h1::before{
+                content: " HTML ";
+                color: purple;
+            }
+            ::selection{/*가상요소를 붙히지 않으면 전체문서 선택*/
+                background-color: skyblue;
+            }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Explicabo illum sunt distinctio sed, tempore, repellat 
+        rerum et ea laborum voluptatum! Quisquam error fugiat 
+        debitis maiores officiis, tenetur ullam amet in!
+    </p>
+
+</body>
+</html>

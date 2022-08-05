@@ -25,7 +25,7 @@
             color:crimson;
         }
         /*마우스 클릭시 */
-        a:active{
+        a:active/*:not(.google)붙혀줄수도있음.*/{
             background-color: black;/*뒷배경 색바꿈*/
         }
         /*마우스 오버시*/
@@ -41,7 +41,7 @@
             background-color: lime;
         }
         /*[문제] 클래스가 google이 아닌 a요소를 선택해서
-        배경을 다른색 주기 (요소: not (배제할요소))*/
+        배경을 다른색 주기 (요소: not (배제할요소)) ==> not뒤에 ()항상옴,*/
         a:not(.google){
             background-color: beige;
         }
