@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22선택자.html</title>
+    <style type="text/css">
+        /*1.태그 선택자*/
+        div{
+            color:darkgray;
+            font-size : 18pt;
+            font-family: 고딕;
+        }
+        /*2.클래스 선택자 : 앞에 마침표(.)을 붙인다.
+        .클래스명(속성명 : 값:...)
+
+        [문제]class가 c1인 요소를 선택해서
+                글자색: 
+                안쪽여백 : 1em;
+                바깥여백: 1.2em;
+                배경색:
+     */
+        .c1{
+            color:dimgray;
+            padding: 1em;
+            margin: 1.2em;
+            background-color:darkkhaki;
+        }
+
+        .c2{
+            border: thick green dashed;/*border에 dashed 점선주기 thick 로 진해짐*/
+        }
+
+        /*id가 dv1인 요소를 선택해서
+        배경색 :
+        글자색 : 
+        글자크기 : 1.5em*/
+        #dv1{
+            background-color: sandybrown;
+            color :indigo;
+            font-size: 1.5em;
+        }
+        #dv2{
+            color:blue;
+            font-weight: bold;
+        }
+        /*우선순위 : 아이디선택자 > 클래스 선택자 > 태그선택자*/
+
+
+        /*링크 선택해서 
+            글자 스타일 italic
+            글자색:
+        */
+        a{
+            font-style: italic;/*글자체*/
+            color :red;
+            text-decoration: none;/*하이퍼링크 등 데코를 지울때 none*/
+        }
+
+        /*div 안에 있는 a태그에 대해 
+            배경색 navy
+            글자색 white로
+        */
+        div a{/*(div>h2>a 순서라,손자임) 스페이스해야함*/
+            background-color: navy;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- id (identity) : 식별자 용도로 쓰이며 한 페이지 내에 unique한 값을 가져야 한다.-->
+    <!-- class         : 한 페이지 내에서 동일한 이름의 클래스가 여러개 나와도 된다-->
+    <h1>ID선택자(Selector), class 선택자, 태그 선택자</h1>
+    <div id="dv1">div1 #dv1</div>
+    <div id="dv2" class="c1">div2.c1 #dv2</div>
+    <div class="c1 c2">div3.c1 c2</div>
+    <div class="c2">div4.c2</div>
+    <div id="div5">div5#dv5</div>
+    <hr color="skyblue">
+    이것은 <a href="http://www.naver.com">단순링크</a>입니다<br>
+    <div>
+        div 태그 안에서 
+        <h2><a href="./test1/회원가입_정수현.html">CSS.0예제</a>에 링크를 겁니다.</h2>
+    </div>
+</body>
+</html>
