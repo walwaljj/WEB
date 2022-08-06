@@ -8,14 +8,15 @@
     <style>
         body{
             background-attachment:fixed;
-            background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20140623_266%2Femperium93_1403472068001J89rG_JPEG%2F10483732_285702431602197_8540555670707744861_n.jpg&type=sc960_832");
+            background-image: url("https://kin-phinf.pstatic.net/20210929_15/1632923915732tI2L0_JPEG/1632753374648.jpg?type=w750");
             background-repeat: no-repeat;
             background-size: 100%;
         }
         table{
             width: 100%;
             height:900px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.97);
+            
            
         }
 
@@ -38,13 +39,10 @@
         }
         a{
             text-decoration: none;
+            color:darkgrey;
         }
-        a:visited{
-            color:crimson;
-        }
-        s{
-            color:silver
-        }
+        
+
         li{
             font-size: small;
         }
@@ -52,45 +50,34 @@
             margin-inline-start: 60%;
             
         }
+        
+        
+       
 
 
 
     </style>
 </head>
 <body>
+    <div class="b">
+        <label >상품검색<input type="text" value="..">
+         <input type="button" value="go!"></label></div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
     <table  cellpadding="20">
         <tbody>
             <tr>
                 <td colspan="5">
-                    <div class="b">
-                   <label >상품검색<input type="text" value="..">
-                    <input type="button" value="go!"></label></div>
+                   
                 </td>
                 
             </tr>
             <tr>
-                <!-- 카테고리 이미지-->
+                <!-- 상단 목록-->
                 <td colspan="5" style="height:20px">
                     <img src="https://user-images.githubusercontent.com/108582847/183258162-663612dd-be3b-4cb3-b042-2c3d130bb69d.png"
-                     width="600px" height="30px"> </td> 
+                     width="700px" height="30px"> </td> 
             </tr>
-            <tr>
-                <!-- 하늘색 원피스-->
-                <td colspan="2" rowspan="2">
-                    <a href="./레이아웃상세.html">
-                        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_8216957%2F82169572485.jpg&type=sc960_832"
-                        width="80%"><br>
-                        하늘색 원피스<br> <em> 55500 KRW</em>
-                        </td>
-                <td rowspan="2"colspan="2">
-                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220111_72%2F1641872117126W29WH_JPEG%2FCNA2022010401006664.0004_5.jpg&type=sc960_832"
-                    width="50%"><br>
-                    <a href=".pkht.html">
-                        하트 가디건<br>
-                        <s style="font-style:italic;">정가 99900 KRW</s><br> 44400 KRW
-                    </a>
-                    </td>
+                <!-- 카테고리-->
                 <td rowspan="5" style="width:100px;">
                     <img src="https://user-images.githubusercontent.com/108582847/183258127-4d170b73-b158-4848-8e78-7c3cbfc3d74e.png" width="100px">
                     <hr>
@@ -101,22 +88,41 @@
                     <li><a href="">ACCESSORIES</a></li>
                  </ul>
                 </td>
+            <tr>
+                <!-- 하늘색 원피스-->
+                <td colspan="2" rowspan="2">
+                    <a href="./레이아웃상세.html#dress" target="_blank">
+                        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_8216957%2F82169572485.jpg&type=sc960_832"
+                        width="80%"><br>
+                        하늘색 원피스 
+                        <p><em> 55500 KRW</em></p>
+                        </td>
+                <td rowspan="2"colspan="2">
+                    <a href="./레이아웃상세.html#pkht" target="_blank">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220111_72%2F1641872117126W29WH_JPEG%2FCNA2022010401006664.0004_5.jpg&type=sc960_832"
+                        width="50%"><br>
+                        하트 가디건
+                        <p><s style="font-style:italic;">정가 99900 KRW</s><br> 44400 KRW</p>
+                    </a>
+                    </td>
+                
             </tr>
 
             <tr></tr>
 
             <tr>
                 <td colspan="2" rowspan="2">
-                    <a href="사진 링크">
-                    <img src="사진">
-                    <hr>
-                     상품설명
+                    <a href="./레이아웃상세.html#bottom" target="_blank">
+                    <img src="https://cdn-images.farfetch-contents.com/16/09/08/01/16090801_30255461_322.jpg"
+                     width="60%" height="60%" ><br>
+                    체크바지 
+                    <p><em> 66600 KRW</em></p>
                     </td>
                 <td rowspan="2"colspan="2">
                     <a href="사진 링크">
-                    <img src="사진">
-                    <hr>
-                     상품설명
+                    <img src="사진"><br>
+                    하늘색 원피스 
+                    <p><em> 55500 KRW</em></p>
                     </td>
             </tr>
 
@@ -148,7 +154,7 @@
         Copyright©2022 어느날..</p>
         </div>
     <div>
-        <a href="#H">상단</a>
+        <a href="#H" id="gomain"><h1>⇧⇧</h1></a>
     </div>
 </body>
 </html>
