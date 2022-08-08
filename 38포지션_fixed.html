@@ -10,27 +10,30 @@
             margin:0;
         }
         .fixed-box{
-            position: fixed;
+            position: fixed;/*창이 움직인다해도 붙은상태로 유지.*/
             color: darksalmon;
             background-color: darkblue;
             font-weight:  bold;
-            text-align: center;
+            text-align: center;/*박스안의 텍스트를 센터로 정렬한다.
+                                side는 왼쪽에 붙어있던 글씨가 중앙으로 조금 이동하는걸 확인할수있음!*/
 
         }
         .sidebar{
             width: 50px;
-            height: 100%;
+            height: 100%;/* 생략하면 글씨만큼만 영역이 지정.*/
             top:0;
-            right:0;/*오른쪽으로 박스가붙음. */
-            padding-top: 100px;
+            right:0;/*오른쪽으로 박스가붙음. 
+                        생략하면 왼쪽에 붙음*/
+            padding-top: 100px;/*위에서부터 text가 100px떨어지게된다.*/
         }
         .footer{
-            width: 100%;
+            width: 100%;/* 생략하면 글씨만큼만 영역이 지정.*/
             height: 50px;
-            vertical-align: middle;/*div는 적용안됨*/
+            vertical-align: middle;                       /*div는 적용안됨*/
             line-height:50px;/*글자의 라인*/
             left:0;
-            bottom:0;
+            bottom:0/*bottom을 0으로 주면 바닥에 붙는다.
+                    생략하면 top에붙는다.*/;
         }
         
     </style>

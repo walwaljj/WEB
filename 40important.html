@@ -11,9 +11,15 @@
                             그러나  !important가 제일 우위*/
 
         div.food{color:chocolate}
-        .food{color:blue}/*동일한 조건일때는 아래서술한게 적용됨.*/
+        .food{color:blue}/*결과 : chocolate색
+        
+        동일한 조건일때는 아래 서술한게 적용됨
+        ex)div.food{color:bule} 일때 will be Chocolate 은 bule로 적용된다.*/
+
         div{
-            color:green; /*클래스 선택자가 우선임*/
+            color:green; /*클래스 선택자가 우선임 
+            즉, div < .food < div.food */
+            
         }
     </style>
 </head>
