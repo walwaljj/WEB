@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36포지션_relative.html</title>
+    <style>
+        span,div{
+            background-color: cornflowerblue;
+            border:2px solid darkblue;
+        }
+
+        .top{
+            position:relative;/*원래 static인 위치(원래 자기 자신의 위치) 를
+                                 기준으로 위치를 잡는다.*/
+
+            top:15px;/*앞 예제처럼 기준지점으로부터 top에 15px의 여백을줌.*/
+        }
+        .right{
+            position: relative;
+            right:10px;
+            z-index: 2;
+        }
+        .bottom{
+            position:relative;
+            bottom: 10px;
+
+        }
+        .left{
+            position:relative;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <span class="top">span1</span>
+    <span class="right">span2</span>
+    <span class="bottom">span3</span>
+    <div class="left">div1</div>
+    <!-- static(디폴트)
+        차례대로 왼쪽에서 오른쪽, 위에서 아래로 배치를 한다.-->
+        <h1>position-static, [relative], absolute, fixed</h1>
+</body>
+</html>

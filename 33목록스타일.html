@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- 33목록스타일--></title>
+    <style>
+        /* .menu > li 에 대해 아래와 같이 스타일정의하기
+	   - 폭:120px  높이:25px
+	   - 배경색: lightblue;
+	   - 마진: 3px
+	   - 패딩: 10px
+	   - 글자색: 알아서
+	   - 서체: Helvetica, sans-serif
+	   - 글자크기 : 13px;
+	   - 글자정렬: 중앙에 오도록
+
+	*/
+
+        .menu>li{
+            float: left;
+            /*list-style: none;/*목록 앞 메뉴 구분 사라짐*/
+            list-style-position: inside;/*박스안에 메뉴 구분 점이 들어옴.*/
+                                        /*inside안주게되면 박스 바깥에 메뉴구분점.*/
+            background-color: black;
+            width: 120px;
+            height: 25px;
+            margin: 3px;
+            padding: 10px;
+            color: #dd6700;
+            font-family: Helvetica, sans-serif;
+            font-size: 13px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>목록스타일</h1>
+    <ul style="list-style-type: circle;list-style-image: url(images/square.png);">
+        <li>html</li>
+        <li>Css</li>
+        <li>java</li>
+        <li>sql</li>
+    </ul>
+    <hr>
+    <ol style="list-style-type:lower-roman">
+        <li>html</li>
+        <li>Css</li>
+        <li>java</li>
+        <li>sql</li>
+    </ol>
+    <hr>
+    <ul class="menu">
+        <li>html</li>
+        <li>Css</li>
+        <li>java</li>
+        <li>sql</li>
+    </ul>
+    <hr style="clear:left">
+</body>
+</html><!-- 33목록스타일-->

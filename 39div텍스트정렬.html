@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39div텍스트정렬.html</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        #mydiv{
+            text-align: center;
+            line-height: 300px; /*line-height 줄간격 :300px
+                                한줄일때는 중앙에 정렬됨.*/
+            /* vertical-align: middle;테이블에서 셀에서 적용 div는 적용안됨. */
+            
+
+            /*1.해결방법 : 아래 body에서 div로 감싸고..?*/
+            border : dashed;
+            color: darkkhaki;
+
+            
+        }
+
+        #mytab{
+            border : 2px solid tomato;
+            margin-top:1em;/*mydiv랑 1만큼만 띄우게,,*/
+            display: table;/*table타입으로 바꿔줌*/
+        }
+        #mycell{
+            display: table-cell;/*mytab을 table로 바꿨기 때문에 cell로바꾸면 */
+            vertical-align: middle;/*vertical-align이 먹는다.*/
+            text-align:center;
+        }
+
+
+
+        /*박스 숨기는 3가지방법!!! , 아래 js랑 같이보자*/
+        #mytab2{
+            margin-top: 1em;
+            border : 3px solid darkslateblue;
+            background-color: cadetblue;
+            display : none;/*눈에 안보임, 차지하던 영역 사라짐==> block요소를 주면 다시 나타남.*/
+        }
+        #mydiv2{
+            background-color: yellowgreen;
+            visibility: hidden;/*안보임. 영역은 남아있음.==> hidden의 반대는 visible*/
+        }
+        #mydiv{
+            opacity: 0;/*두명도 : 0(투명), 1(불투명) ==> 1값으로 스타일주면됨.*/
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="mydiv" class="">
+        가나다라마바사
+      </div>
+      <div id="mydiv2" class="">
+        가나다라마바사
+      </div>
+      <div id="mytab" class="">
+        <div id="mycell">
+            자차카타파하
+        </div>
+      </div>
+    
+      <div id="mytab2" class="">
+            <div id="mycell2">
+                자차카타파하
+            </div>
+      </div>
+      <h1 onclick="show()">안녕하세요</h1>
+      <script>
+        function show(){//자바스크립트는 앞에 function을 붙혀야한다.
+
+            var obj=document.getElementById('mytab2');//document영역에서 mytab2를 찾겠다.
+            //alert(obj)
+            obj.style.display='block'//display가 none이였던것이 block요소로 바뀌면서 다시등장.
+            //                      div는 block 속성이기 때문에 .
+
+            var obj2=document.getElementById('mydiv2');
+            obj2.style.visibility='visible'
+
+            var obj3=document.getElementById('mydiv');
+            obj3.style.opacity=1
+        }   
+      </script>
+</body>
+        
+</html>

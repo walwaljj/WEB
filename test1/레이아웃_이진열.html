@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃_이진열</title>
+    <style type="text/css">
+        *{
+            margin: 10px;
+        }
+        #container{
+            position: relative;
+        }
+        .header{
+            width: 1200px;
+            border: 2px solid #dbdbdb;
+        }
+        .nav{
+            width: 1200px;
+        }
+        .nav ul{
+            margin: 0;
+            padding: 0;
+            background-color: #b9b9ff;
+            border-radius: 4px;
+        }
+        .nav ul li{
+            display: inline-block;
+            padding: 4px 15px;
+            list-style-type: none;
+        }
+        .section{
+            width: 880px;
+            height: 500px;
+            float: left;
+            border: 2px solid #9fe1f1;
+            border-radius: 4px;
+        }
+        article{
+            margin: 10px;
+            width: 400px;
+            border: 2px solid #9fe1f1;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        article ul{
+            margin: 0;
+            padding: 0;
+            color: blue;
+            font-size: 18px;
+            list-style-type: none;
+        }
+        article ul p{
+            font-weight: bold;
+        }
+        .aside{
+            position: absolute;
+            width: 300px;
+            height: 500px;
+            left: 900px;
+            border: 2px solid #9fe1f1;
+            border-radius: 4px;
+        }
+        .aside ul{
+            padding: 0;
+        }
+        .aside li{
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+        }
+        .footer{
+            width: 1200px;
+            background-color: #b9b9ff;
+            border-radius: 4px;
+            clear: both;
+        }
+        .footer div{
+            padding: 10px;
+        }
+        .footer span{
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav li, footer div{
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <div>
+                <img src="images/headerimg.PNG" alt="">
+            </div>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li>HOME</li>
+                <li>Signup</li>
+                <li>Signin</li>
+                <li>Board</li>
+            </ul>
+        </nav>
+        <section class="section">
+            <article>
+                <div>
+                    <ul>
+                        <p>공지사항1</p>
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <ul>
+                        <p>베스트 글</p>
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <ul>
+                        <p>공지사항2</p>
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <ul>
+                        <p>공지사항3</p>
+                        <li>...</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <aside class="aside">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <div>
+                &copy;Copyright/<span>회사소개</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

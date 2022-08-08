@@ -1,0 +1,140 @@
+@charset "UTF-8"; /*꼭해야함*/
+/**/
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;/*박스 사이즈?*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+
+body{
+    color:navy;
+    font-family: 'Black And White Picture', sans-serif;
+       
+}
+#wrap{
+    width: 90%;/*픽셀로하면 페이지가 줄여지면 감춰짐*/
+    max-width: 1240px;/*%로 width를 주고 맥스값 까지만 커짐*/
+
+    margin: 0 auto;/*margin auto를 안주면 div가 창의 왼쪽으로 붙는다.*/
+
+    height: auto;/*양 옆은 0 높이는 오토*/
+    /* background-color: burlywood; */
+}
+
+.clear{
+    clear: both;
+}
+header{
+    border: 1px solid silver;
+    padding:5px;
+    border-radius:5px;
+    margin-top:10px;
+}
+header img{
+    text-align: center;/*이미지 센터맞추기 : 이미지는 텍스트처럼 영역지정..
+                        text-align: center;이게 빠지면 div안 오른쪽영역에 여백이 보임*/
+    width: 98%;/*width로 크기를 정해주기
+                 width: --% : 줄어든 창에 맞춤
+                  width: --px : px에 정한 크기만큼 고정, 창이 줄어들어 잘리게되면 스크롤붙음.
+                 width: 를 생략하면 원본크기로 붙음. */
+
+}
+/* nav---------------------------------------------------------*/
+nav{
+   padding:5px ;
+   background-color: rgba(225, 232, 240, 1);
+   height: 30px;
+   border-radius: 5px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+nav ul li{
+    float:left;
+    padding:0 5px 0 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 2px 20px 3px 20px;
+    color:rgb(50, 50, 50);
+    display:block;
+
+}
+
+nav ul li a:hover{
+    background-color: rgb(102,153,255);
+    color:aliceblue;
+    border-radius: 5px;/*모서리 둥글게*/
+}
+/*article--------------------------------------------*/
+article{
+    height: 500px;
+    border:1px solid silver;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding : 10px;
+    width: 75%;
+    float: left;/*aside영역이랑 붙어야함.*/
+}
+article section{
+    border : 1px solid lawngreen;
+    border-radius:5px;
+    padding:10px;
+    margin:5px;
+    width: 47.6%;
+    float: left;
+}
+/*aside----------------------------------------------*/
+aside{
+    height: 500px;
+    border:1px solid silver;
+    border-radius: 5px;
+    margin: 5px 0;/*aside영역이랑 붙어야함.*/
+    padding : 10px;
+    width: 24%;
+    float: right;
+    
+}
+aside nav{
+    background: none;/*목록에서 nav에 background를 했었음.*/
+    border:none;
+
+}
+
+aside nav ul{
+    list-style: none;
+}
+
+aside nav ul li{
+    padding: 0 5px;
+    
+    /* clear: both; */
+    /*글씨가 흐를때 여기서 clear로 aside에 줬던 float-right값을 해제시켜도 될듯?*/
+}
+
+aside nav ul li a{
+    padding : 5px 0;
+    width:170px;/*값이 px라고 명시가 되어있지 않거나, px를 작게주면 글씨가 흐름.. */
+}
+aside nav ul li a:hover{
+    background-color: transparent;/*부모앨리먼트에 background-color가 있으므로
+                                    상속받은 부모의 컬러를  transparent로  투명하게 만듦.*/
+    color : blue;
+    font-weight: bold;
+}
+/*footer*/
+footer{
+    background-color: rgb(232, 255, 240);
+    height: 50px;
+    line-height: 30px;
+    border:1px solid silver;
+    font-size: 0.8;
+    padding: 10px 20px;
+    border-radius: 5px;/*현재 보더 레이아웃은 5px로 전부 하고이씀*/
+}

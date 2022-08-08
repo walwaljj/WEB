@@ -11,38 +11,46 @@
             background-image: url("https://kin-phinf.pstatic.net/20210929_15/1632923915732tI2L0_JPEG/1632753374648.jpg?type=w750");
             background-repeat: no-repeat;
             background-size: 100%;
-        }
+
+
+       }
         table{
-            width: 100%;
+            width: 800px;
             height:900px;
-            background-color: rgba(255, 255, 255, 0.97);
+            background-color: rgba(255, 255, 255, 0.9);
+            margin:auto;
         }
+        
         div.b{
-            margin-inline-start: 60%;
+            margin-inline-start: 600px;
 
         }
         li{
             font-size: small;
         }
-        body>div{
+        /* body>div{
             float:left;
-            margin: 6px;
+            width: 100px;
+            padding-left: 30px;
+  
+        } */
+
+        .c{
+            display: inline-block;
+            margin-right: 30px;
+
+        
+            padding-left: 30px;
+        }
+ 
+        body p{
+            font-size: small;
+            color:darkgray;
         }
         a{
             text-decoration: none;
             color:darkgrey;
         }
-        body p{
-            font-size: small;
-            color:darkgray;
-        }
-        .dress:hover{
-            background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220111_130%2F16418721169223dzCx_JPEG%2FCNA2022010401006664.0004_3.jpg&type=sc960_832");
-        }
-       
-
-
- 
     </style>
 </head>
 <body>
@@ -50,7 +58,7 @@
         <div class="b">
         <input type="button" value="로그인">
         <input type="button" value="회원가입">
-        <input type="text" value="상품검색">
+        <input type="text" value="상품을 검색하세요! ">
          <input type="button" value="go!" onclick="alert('찾으시는 상품이 없습니다.')"></div></form>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -88,14 +96,16 @@
                 <td colspan="2" rowspan="2" >
                     <a href="./레이아웃상세.html#dress" target="_blank"  >
                         <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_8216957%2F82169572485.jpg&type=sc960_832"
-                        width="90%"  ><br>
+                        width="300px"  ><br>
                         하늘색 원피스 
                         <p><em> 55500 KRW</em></p>
                         </td>
+
+                <!-- 하트 가디건-->
                 <td rowspan="2"colspan="2">
                     <a href="./레이아웃상세.html#pkht" target="_blank">
                         <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220111_72%2F1641872117126W29WH_JPEG%2FCNA2022010401006664.0004_5.jpg&type=sc960_832"
-                        width="50%"><br>
+                        width="300px"><br>
                         하트 가디건
                         <p><s style="font-style:italic;">정가 99900 KRW</s><br> 44400 KRW</p>
                     </a>
@@ -109,14 +119,14 @@
                 <td colspan="2" rowspan="2">
                     <a href="./레이아웃상세.html#bottom" target="_blank">
                     <img src="https://cdn-images.farfetch-contents.com/16/09/08/01/16090801_30255461_322.jpg"
-                     width="60%" height="60%" ><br>
+                     width="300px" height="300px" ><br>
                     체크바지 
                     <p><em> 66600 KRW</em></p>
                     </td>
                 <td rowspan="2"colspan="2">
                     <a href="./레이아웃상세.html#ring" target="_blank">
                     <img src="https://cdn-images.farfetch-contents.com/17/44/99/39/17449939_39327696_1000.jpg"
-                    width="40%" height="70%"><br>
+                    width="300px" height="300"><br>
                     알록달록 반지
                     <p><em> 10000 KRW</em></p>
                     </td>
@@ -130,26 +140,26 @@
         </tbody>
     </table>
     <hr>
-    <div>
+    <div class="c" >
         <h5>COMPANY</h5>
-        <p>
+        <p >
         수현컴퍼니<br>
         E-MAIL:수현@abc.com<br>
         Address:부산시 창원시..어쩌구<br></p>
     </div>
-    <div>
+    <div class="c">
         
         <h5>INFO</h5>
       <p>CS & Q&A : 
         <time>MON-FRI<br> 
             10:00-18:00</time></p> 
     </div>
-    <div>
+    <div class="c">
         <h5>Follow</h5>
        <p> Instagram : wal..<br>
         Copyright©2022 어느날..</p>
         </div>
-    <div>
+    <div class="c">
         <a href="#SHOP" id="gomain"><h1>⇧⇧</h1></a>
     </div>
 </body>

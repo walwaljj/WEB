@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40important.html</title>
+    <style>
+        p{color:red !important}
+        #thing{color:blue}/*위 p태그보다는 id태그가 우위..
+                            그러나  !important가 제일 우위*/
+
+        div.food{color:chocolate}
+        .food{color:blue}/*동일한 조건일때는 아래서술한게 적용됨.*/
+        div{
+            color:green; /*클래스 선택자가 우선임*/
+        }
+    </style>
+</head>
+<body>
+    <p id="thing">will be Red</p>
+    <div class="food">will be Chocolate</div>
+</body>
+</html>
