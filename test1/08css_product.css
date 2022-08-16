@@ -1,0 +1,40 @@
+body{
+    height: 800px;
+    width: 600px;
+    margin: 20px auto;
+    
+}
+
+#container{
+    border : none;
+    width: 600px;
+    margin : 0 auto;
+}
+div{
+    
+    padding: 20px;
+    margin-bottom:30px;
+    border : 1px solid #222;
+}
+caption{
+    text-align: center;
+}
+td{
+    border: #222 solid;
+    text-align: center;
+    padding: 10px;
+}   
+table{
+    border-collapse: collapse;
+}
+thead{
+    font-weight: bold;
+}
+#package{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#description{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
