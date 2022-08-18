@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+        margin: 20px;
+        padding: 20px;
+    }
+    #signup label{
+        float: left;
+        font-size:13px;
+        width: 110px;
+    }
+    #signup input[required]{
+        border : 1px red solid;
+    }
+    #signup input[readonly]{
+        border : none;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="join" id="signup">
+            <fieldset>
+            <legend>로그인정보</legend>
+            <label for="#id">아이디</label>
+            <input type="text" id="id" required></input><br>
+            <label for="#pw">비밀번호</label>
+            <input type="text" id="pw" required></input><br>
+            <label for="#pwchk">비밀번호 확인</label>
+            <input type="text" id="pwchk"></input><br>
+            <label for="#grd"readonly>회원 등급</label>
+            <input type="text" id="grd"></input><br>            
+            </fieldset>
+            <fieldset>
+                <legend>개인 정보</legend>
+                <label for="#name">이름</label>
+                <input type="text" id="name"></input><br>
+                <label for="#email">메일주소</label>
+                <input type="text" id="email"></input><br>
+                <label for="#tel">연락처</label>
+                <input type="tel" id="tel"></input><br>
+            </fieldset>
+            <div>
+                <button type="submit" value="제출"></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

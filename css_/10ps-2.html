@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+           border: 3px solid grey;
+            
+        }
+        input:checked+label{
+            color: red;
+        }
+        fieldset{
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            
+        }
+        li{
+            list-style: none;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            
+        }
+        button{
+            border-radius: 30px;
+            /* padding: 10px; */
+            width: 80px;
+            height: 40px;
+            font-weight:bold;
+            
+            
+        }
+        input:not([type=radio]){
+            border:1px solid #ccc;
+            border-radius: 30px;
+            padding :5px;
+            width:200p
+            
+    
+        }
+        li:nth-child(){
+            float: left;
+            width: 50px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <form action="join">
+    <fieldset>
+        <legend><b>
+            개인정보</b></legend>
+        <ul>
+            <li><label for="name">이름</label>
+                <input type="text" name="name" id="name">
+            </li>
+        </ul>
+        <ul>
+            <li><label for="tel">연락처</label>
+                <input type="tel" name="tel" id="tel"s></li>
+        </ul>
+    </fieldset>
+        <fieldset>
+    <legend><b>
+        객실형태</b></legend>
+    <ul>
+        <li><input type="radio" name="room" id="basic">
+        <label for="basic">기본형(최대 2인)</label></li>
+    </ul>
+    <ul>
+        <li><input type="radio" name="room" id="family">
+        <label for="family">가족형 (최대 8인))</label></li>
+    </ul>
+</fieldset>
+
+<button type="submit" value="제출">제출</button>
+</form>
+</body>
+</html>
