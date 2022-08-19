@@ -8,16 +8,27 @@
     <style>
         img{
             box-shadow: 5px 5px 10px 0 lightslategrey;
-            border-radius: 5px;
+            border-radius: 50%;
             width: 200px;
             height: 200px;
             float: left;
             margin: 10px;
+            perspective: 200px;
+            animation : rotateY 3s infinite;
+            
 
         }
-        img:hover:nth-child(1){
+        img:hover{
             border: 3px red solid;
+            
         }
+        
+            @keyframes rotateY{
+                form{transform : rotateY(0deg);}
+                50%{transform : rotateY(180deg);}   
+                to{transform : rotateY(359deg);}               
+            }
+        
     </style>
 </head>
 <body>
