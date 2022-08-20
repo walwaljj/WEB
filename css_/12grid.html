@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border: 1px slateblue solid;
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 5px 5px;
+            grid-template-areas: 
+            "box1 box1 box2"
+            "box1 box1 box2"
+            "box3 . box4"
+            ". . .";
+                
+        }
+        .box1{
+            background-color: #3689ff;
+            grid-area: box1;
+        }
+        
+        .box2{
+            background-color: #00cf12;
+            grid-area: box2;
+        }
+        
+        .box3{
+            background-color: #ff9019;
+            grid-area: box3;
+        }
+        
+        .box4{
+            background-color: #ffd000;
+            grid-area: box4;
+        }
+/* 
+        .box5{
+            background-color: #3689ff;
+        } */
+        /* .box1{
+            background-color: #3689ff;
+            grid-column: 1/4;
+        }
+        
+        .box2{
+            background-color: #00cf12;
+            grid-row:2/4
+        }
+        
+        .box3{
+            background-color: #ff9019;
+            grid-column: 2/4;
+        }
+        
+        .box4{
+            background-color: #ffd000;
+            grid-column: 3/4;
+        }
+
+        .box5{
+            background-color: #3689ff;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem iosum dolor sit amet consectetur<br>adipisicing elit,Amet, reprehenderit</div>
+        <div class="items">Lorem iosum dolor sit amet consectetur<br>adipisicing elit,Amet, reprehenderit</div>
+        <div class="items">Lorem iosum dolor sit amet consectetur<br>adipisicing elit,Amet, reprehenderit</div>
+        <div class="items">Lorem iosum dolor sit amet consectetur<br>adipisicing elit,Amet, reprehenderit</div>
+        <div class="items">Lorem iosum dolor sit amet consectetur<br>adipisicing elit,Amet, reprehenderit</div>
+    </div>
+    <div id="wrapper">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+    </div>
+</body>
+</html>
